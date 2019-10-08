@@ -30,9 +30,9 @@ namespace PIndividual.PruebasConsola
             using (AeropuertoEntities context = new AeropuertoEntities())
             {
                 var A1 = new Aviones();
-                A1.Asientos = "0";
-                A1.Cantidad = 0;
-                A1.Modelo = "ABC";
+                A1.Asientos = "45";
+                A1.Cantidad = 4;
+                A1.Modelo = "ABCFG";
                 bl.AddAvion(A1);
             }
 

@@ -35,6 +35,7 @@ namespace PIndividual.BL
             }
         }
 
+
         public void UpdateVuelo()
         {
             using (AeropuertoEntities context = new AeropuertoEntities())
@@ -42,10 +43,10 @@ namespace PIndividual.BL
                 try
                 {
 
-                var vuelo = context.Vuelos.Where(x=> x.Id_vuelo==1).SingleOrDefault();
-                    vuelo.Escala = "prueba";
+                    var vuelo = context.Vuelos.Where(x => x.Id_vuelo == 1).SingleOrDefault();
+                    vuelo.Escala = "Actualizado";
 
-                    context.Entry(vuelo).State = System.Data.Entity.EntityState.Modified; // le estoy diciendo al entity que fue cambiado 
+                    //context.Entry(vuelo).State = System.Data.Entity.EntityState.Modified; // le estoy diciendo al entity que fue cambiado 
 
                     context.SaveChanges();
                 }

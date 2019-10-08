@@ -14,13 +14,13 @@ namespace PIndividual.PruebasConsola
 
         static void Main(string[] args)
         {
-            //Prueba pru = new Prueba();
-            //pru.AgregarAviones();
+            Prueba pru = new Prueba();
+            pru.AgregarAviones();
             //pru.AgregarPasajeros();
             //pru.Agregarvuelo();
 
-            Pruebas p = new Pruebas();
-            p.UpdateVuelo();
+            //Pruebas p = new Pruebas();
+            //p.UpdateVuelo();
         }
 
     }
