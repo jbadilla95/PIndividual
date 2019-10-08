@@ -34,5 +34,26 @@ namespace PIndividual.BL
                 context.SaveChanges();
             }
         }
+
+        public void UpdateVuelo()
+        {
+            using (AeropuertoEntities context = new AeropuertoEntities())
+            {
+                try
+                {
+
+                var vuelo = context.Vuelos.Where(x=> x.Id_vuelo==1).SingleOrDefault();
+                    vuelo.Escala = "prueba";
+
+                    context.Entry(vuelo).State = System.Data.Entity.EntityState.Modified; // le estoy diciendo al entity que fue cambiado 
+
+                    context.SaveChanges();
+                }
+                catch (Exception exp)
+                {
+                    Console.WriteLine("ERROR:  " + exp.Message);
+                }
+            }
+        }
     }
 }

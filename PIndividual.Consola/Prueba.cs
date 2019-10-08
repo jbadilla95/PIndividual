@@ -41,16 +41,24 @@ namespace PIndividual.PruebasConsola
         {
             using (AeropuertoEntities context = new AeropuertoEntities())
             {
-                var P1 = new Pasajeros();
-                P1.Id_vuelo = 0;
-                P1.Apellidos = "Badilla";
-                P1.Nombre = "Jeison";
-                P1.Pasaporte = 23;
-                P1.Visa = 111;
-                bl.AddPasajero(P1);
+                try
+                {
+                    var P1 = new Pasajeros();
+                    P1.Id_vuelo = 0;
+                    P1.Apellidos = "Badilla";
+                    P1.Nombre = "Jeison";
+                    P1.Pasaporte = 23;
+                    P1.Visa = 111;
+                    bl.AddPasajero(P1);
+                }
+                catch (Exception exp)
+                {
+                    Console.WriteLine("ERROR:  " + exp.Message);
+                }
             }
 
         }
-    }
 
+       
+    }
 }
