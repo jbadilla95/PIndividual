@@ -48,7 +48,7 @@ namespace PIndividual.BL
 
                     //context.Entry(vuelo).State = System.Data.Entity.EntityState.Modified; // le estoy diciendo al entity que fue cambiado 
 
-                    context.SaveChanges();
+                    context.SaveChanges(); // cambio
                 }
                 catch (Exception exp)
                 {
