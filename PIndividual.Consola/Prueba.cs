@@ -32,7 +32,7 @@ namespace PIndividual.PruebasConsola
                 var A1 = new Aviones();
                 A1.Asientos = "45";
                 A1.Cantidad = 4;
-                A1.Modelo = "ABCFG";
+                A1.Modelo = "ABCFGJJ";
                 bl.AddAvion(A1);
             }
 
