@@ -10,7 +10,7 @@ namespace PIndividual.DAL.FC
     public class DBContextCF : DbContext //Se trae los metodos y propiedades por que es publico 
     {
         public DBContextCF()
-            : base("name=CFEntites") //el base lo que hace es que me trae el constructor de la clase padre o clase base 
+            : base("name=CFEntities") //el base lo que hace es que me trae el constructor de la clase padre o clase base 
         {
         }
 
